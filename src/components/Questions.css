@@ -1,0 +1,160 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.CustomQuestionBox {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1.CustomTitle {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3.questionHeader {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.CustomQuestion {
+  margin-bottom: 20px;
+}
+
+h2.custom-highlighted-text {
+  color: blue;
+}
+
+.custom-options {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.custom-options li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #a4c7fe;
+  border: 2px solid #4285f4;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.custom-options li:hover {
+  background-color: #357ae8;
+}
+
+.CustomHigh,
+.RemoveCustomHighlight,
+.nextCustom {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.nextCustom {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.CustomHigh {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.RemoveCustomHighlight {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.CustomHigh:hover,
+.RemoveCustomHighlight:hover,
+.nextCustom:hover,
+.custom-options li:hover {
+  opacity: 0.8;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.CustomToggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.CustomToggle:hover {
+  background-color: #0a0a0a;
+}
+
+.CustomToggle.dark-mode {
+  transform: rotate(180deg);
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h1.CustomResult {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.custom-options li {
+  cursor: pointer;
+}
+
+.custom-options li.custom-selected-option {
+  background-color: #a4f4fa;
+  border-color: #86c7cc;
+  color: #fff;
+}
