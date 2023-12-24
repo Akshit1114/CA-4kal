@@ -1,13 +1,13 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #282c35;
+  color: #fff;
 }
 
 .CustomQuestionBox {
@@ -15,29 +15,40 @@ body {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #444;
+  border-radius: 12px;
+  background-color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 h1.CustomTitle {
-  font-size: 36px;
+  font-size: 40px;
+  border: 4px solid #ff4b8a;
+  border-radius: 12px;
+  margin-left: 100px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(255, 75, 138, 0.3);
 }
 
 h3.questionHeader {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #ff4b8a;
 }
 
 .CustomQuestion {
-  margin-bottom: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 h2.custom-highlighted-text {
-  color: blue;
+  color: #f66296;
 }
 
 .custom-options {
@@ -51,19 +62,21 @@ h2.custom-highlighted-text {
 .custom-options li {
   margin-bottom: 10px;
   cursor: pointer;
-  background-color: #a4c7fe;
-  border: 2px solid #4285f4;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ff4b8a;
+  border: 2px solid #ff007e;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   width: calc(50% - 10px);
   box-sizing: border-box;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   color: #fff;
+  font-weight: bold;
 }
 
 .custom-options li:hover {
-  background-color: #357ae8;
+  background-color: #ff007e;
+  transform: scale(1.05);
 }
 
 .CustomHigh,
@@ -101,8 +114,8 @@ h2.custom-highlighted-text {
 }
 
 .dark-mode {
-  background-color: #121212;
-  color: #fff;
+  background-color: #0e1014;
+  color: #ccc;
 }
 
 .CustomToggle {
@@ -157,4 +170,7 @@ button:hover {
   background-color: #a4f4fa;
   border-color: #86c7cc;
   color: #fff;
+}
+.CustomHigh {
+  margin-right: 150px;
 }
